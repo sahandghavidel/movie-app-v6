@@ -1,7 +1,11 @@
-export default function Results() {
+import Card from "./Card";
+
+export default function Results({ results }) {
   return (
     <div>
-      <h1>Results</h1>
+      {results.map((result) => (
+        <Card key={result.id} result={result} />
+      ))}
     </div>
   );
 }
