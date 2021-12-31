@@ -8,6 +8,7 @@ export default function Navbar() {
         <h2
           onClick={() => router.push(`?genre=${key}`)}
           className="cursor-pointer select-none mx-8 hover:text-white active:text-red-400 "
+          key={key}
         >
           {title}
         </h2>
